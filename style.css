@@ -1,0 +1,181 @@
+* {
+  font-family: "Roboto Flex", sans-serif;
+  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100%;
+  background-color: #031626; 
+  
+}
+
+header .cabecero{
+  background-color:#031626;
+  display: flex;
+  justify-content: left;
+  padding: 12px;
+  margin-bottom: 4px;
+}
+
+.logo{
+  width: 48px;
+  height: 48px;
+  padding-left: 12px;
+}
+
+main.container {
+  display: grid;
+  width: 90%;
+  height: 800px;
+  max-width: 1200px;
+  max-height: 800px;
+  margin: 0 auto;
+  padding: 48px;
+  grid-template-columns: 60% 36%;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 48px;
+  grid-template-areas: 
+  "text-area1 text-area2"
+  "text-area1 text-area2";
+  align-items: stretch;
+}
+
+
+
+main div.app-header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+main div .app-title{
+  padding-left: 8px;
+  color: #E8EF2D;
+}
+
+
+
+main textarea.inputText {
+  width: 100%;
+  height: 90%;
+  padding: 50px 24px 24px;
+  background-color: transparent;
+  resize: none;
+  border: none;
+  outline: #AAC7FF;
+  color: #AAC7FF;
+}
+
+main textarea.result {
+  background-color: #182E40;
+  width: 96%;
+  height: 115%;
+  padding: 50px 24px 24px;
+  resize: none;
+  border: none;
+  border-radius: 8px;
+  margin-left: 8px;
+  outline: #AAC7FF;
+  color: #AAC7FF;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .textarea {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+main div.advertising{
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  margin-bottom:10px;
+  
+}
+
+.Exclamation{
+  padding: 0px 6px 0px 8px;
+  color: F2F2F2;
+}
+
+p.advertising{
+  font-size: 16px;
+  color: #F2F2F2;
+}
+
+button {
+  border: none;
+  background-color: #566573;
+  color: #F2F2F2;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 8px;
+  cursor: pointer;
+}
+
+.icon--info{
+width: 24px;
+height: 24px;
+}
+
+main.leftButtons{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+main div .encrypt-button{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #0F70BF;
+}
+
+main div .decrypt-button{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 48px;
+  border-radius: 8px
+}
+
+main div .copy{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 48px;
+  border-radius: 8px
+}
+
+
+main div .paste{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 48px;
+  border-radius: 8px
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
