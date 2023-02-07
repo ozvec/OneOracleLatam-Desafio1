@@ -179,3 +179,10 @@ button:disabled {
   background-color: gray;
   cursor: not-allowed;
 }
+
+
+@media all and (min-width: 768px) {
+  main.container{
+    height:800px ;
+  }
+}
